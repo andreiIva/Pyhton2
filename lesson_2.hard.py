@@ -55,6 +55,8 @@ if len(data_new[0]) == 2 and len(data_new[1]) == 2 and len(data_new[2]) == 4:
     if 1 <= int(data_new[0]) <= (30 or 31) and 1 <= int(data_new[1]) <= 12 and 1 <= int(data_new[2]) <= 9999:
     #if int(data_new[0]) in range(1, 31) and int(data_new[1]) in range(1, 12) and int(data_new[2]) in (1, 9999):
         print('Дата введена верно!')
+        print('Вы ввели {} {} {} года'.format(day[data_new[0]], month[data_new[1]], data_new[2]))
+
     else:
         print('Вы ошиблись при вводе дня(месяца или года)\n '
               'Свертесь с образцом.')
@@ -64,7 +66,7 @@ else:
           'Свертесь с образцом.')
 
 
-print('Вы ввели {} {} {} года'.format(day[data_new[0]], month[data_new[1]], data_new[2]))
+
 
 
 
